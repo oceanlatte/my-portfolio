@@ -1,0 +1,58 @@
+:root {
+    --hover-color: #799207;
+    ---blue: #5C8C75;
+    ---green: #799207;
+    ---gray: #595959;
+    --white: #fff;
+
+}
+
+body {
+    background-color: var(---blue);
+    color: var(--white);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(---green);
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    text-decoration: none;
+}
+
+header nav ul li {
+    text-decoration:none;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.hero-bg {
+    display: flex;
+    background-image: url("../images/hero-bg.jpg");
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+}
