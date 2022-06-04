@@ -5,6 +5,10 @@
     --white: #fff;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: var(---blue);
     color: #fff;
@@ -131,6 +135,7 @@ footer div ul li a:hover {
     font-weight: normal;
     border-right: 3px solid var(---gray);
     padding: 60px;
+    min-width: 100px;
 }
 
 /* Portfolio Section Style Start */
@@ -149,13 +154,51 @@ footer div ul li a:hover {
     flex: 1;
 }
 
-.cards {
-    flex: 0 0 70%;
-    display: flex;
-    justify-content: space-between;
+.cards:first-child {
+    flex: 3 0 100%;
 }
-.card-img {
-    max-width: 100%;
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards a {
+    text-decoration: none;
+    color: var(---gray);
+}
+
+.cards a h3 {
+    position: relative;
+    left: 2%;
+    bottom: 30%;
+    max-width: fit-content;
+}
+
+.cards h3 {
+    font-weight: normal;
+    font-size: 20px;
+    background-color: var(---gray);
+    text-decoration: none;
+    padding: 15px;
+    background-image: url(../images/daisy-hover-img.jpg);
+    border-radius: 10px;
+    z-index: 9999;
+    border: 1px solid var(---gray);
+}
+
+.cards img{
+    object-fit: contain;
+    border-radius: 10px;
+    border: 5px solid var(---gray);
+    padding: 10px;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.cards img:hover {
+    color: var(---gray);
+    opacity: 0.8;
 }
 
 /* Start Footer Styling */
