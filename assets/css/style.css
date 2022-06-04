@@ -134,12 +134,8 @@ header nav ul li a {
     display: flex;
     justify-content: space-between;
 }
-
-.card-text {
-    align-items: flex-end;
-    flex: 1;
-}
-
 .card-img {
     max-width: 100%;
 }
+
+/* Start Footer Styling */
