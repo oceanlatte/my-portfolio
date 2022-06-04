@@ -76,8 +76,8 @@ footer div ul li a:hover {
     background-image: url("../images/hero-bg.jpg");
     height: 650px;
     background-size: cover;
-    background-position: 100%;
-    width: auto;
+    background-position: top;
+    width: 100%;
 }
 
 .hero-quote {
