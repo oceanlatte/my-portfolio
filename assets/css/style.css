@@ -48,7 +48,7 @@ header h1 a:hover {
 }
 
 header nav ul,
-footer div ul {
+footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -57,7 +57,7 @@ footer div ul {
 }
 
 header nav ul li a,
-footer div ul li a {
+footer ul li a {
     padding: 20px 30px;
     font-size: 25px;
     text-decoration: none;
@@ -65,14 +65,34 @@ footer div ul li a {
 }
 
 header nav ul li a:hover,
-footer div ul li a:hover {
-        border: 1px solid var(---gray);
-        border-radius: 10px;
-        padding: 10px;
-        background-image: url(../images/daisy-hover-img.jpg);
-        color: var(---gray);
-        box-shadow: 10px 10px 9px 0 rgba(0,0,0,0.75);
+footer ul li a:hover {
+    border: 1px solid var(---gray);
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url(../images/daisy-hover-img.jpg);
+    color: var(---gray);
+    box-shadow: 10px 10px 9px 0 rgba(0,0,0,0.75);
+}
+
+/* Start Footer Styling */
+    footer {
+        background-color: var(---gray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
     }
+
+    footer h3 {
+        font-size: 40px;
+        display: inline;
+        padding: 0 20px;
+    }
+
+    footer ul li {
+        padding: 0 15px;
+        font-size: 25px;
+    }    
 
 
 /* Hero Styling Start */
@@ -199,23 +219,4 @@ footer div ul li a:hover {
 .cards img:hover {
     color: var(---gray);
     opacity: 0.8;
-}
-
-/* Start Footer Styling */
-
-footer {
-    background-color: var(---gray);
-}
-
-footer h3 {
-    font-size: 40px;
-    display: inline;
-    padding: 0 20px;
-}
-
-footer div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
 }
