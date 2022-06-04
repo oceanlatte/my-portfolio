@@ -84,6 +84,10 @@ header nav ul li a {
     justify-content: space-between;
 }
 
+.about-me-container {
+    display: flex;
+}
+
 .avatar img {
     width: 250px;
     height: 250px;
@@ -96,41 +100,46 @@ header nav ul li a {
     margin: 20px;
     border-radius: 15px;
     line-height: 1.5;
+    align-self: center;
+    flex-wrap: wrap;
 }
+/* End About Me Section Styling */
 
 .secondary-header {
     font-size: 40px;
     color: white;
     font-weight: normal;
     border-right: 3px solid var(---gray);
-    width: 140px;
-    flex: 1;
-    padding: 10px
+    padding: 10px;
 }
 
 /* Portfolio Section Style Start */
 .portfolio {
     background-color: var(---green);
     display: flex;
+    justify-content: space-between;
 }
 
-.flex-container {
+.card-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px auto;
-    padding: 0 20px;
-}
-
-.cards {
-    flex: 0 0 50%;
-    justify-content: space-evenly;
-}
-
-.cards h3 {
+    padding: 20px;
     flex: 1;
 }
 
-.cards img {
+.cards {
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    align-items: flex-end;
+    flex: 1;
+}
+
+.card-img {
     max-width: 100%;
 }
