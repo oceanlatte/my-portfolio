@@ -13,7 +13,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 /* Header Styling Start */
 header {
     display: flex;
@@ -25,8 +24,8 @@ header {
 
 header h1 {
     font-weight: normal;
-    font-size: 45px;
-    margin: 20px;
+    font-size: 50px;
+    margin: 30px;
     font-family: 'Sacramento', cursive;
 }
 
@@ -106,6 +105,7 @@ footer div ul li a:hover {
 
 .about-me-container {
     display: flex;
+    padding: 0 50px;
 }
 
 .avatar img {
@@ -130,7 +130,7 @@ footer div ul li a:hover {
     color: white;
     font-weight: normal;
     border-right: 3px solid var(---gray);
-    padding: 10px;
+    padding: 60px;
 }
 
 /* Portfolio Section Style Start */
@@ -145,7 +145,7 @@ footer div ul li a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px auto;
-    padding: 20px;
+    padding: 20px 40px;
     flex: 1;
 }
 
@@ -159,6 +159,10 @@ footer div ul li a:hover {
 }
 
 /* Start Footer Styling */
+
+footer {
+    background-color: var(---gray);
+}
 
 footer h3 {
     font-size: 40px;
