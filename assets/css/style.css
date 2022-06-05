@@ -39,11 +39,11 @@ header h1 {
 }
 
 header h1 a {
+    padding: 5px;
     color: var(---white);
 }
 
 header h1 a:hover {
-    padding: 5px;
     color: var(---gray);
     border: 1px solid var(---gray);
     border-radius: 10px;
@@ -62,14 +62,13 @@ footer ul {
 
 header nav ul li a,
 footer ul li a {
-    padding: 20px 30px;
+    padding: 10px 20px;
     font-size: 25px;
     color: var(---white);
 }
 
 header nav ul li a:hover,
 footer ul li a:hover {
-    padding: 10px;
     color: var(---gray);
     border: 1px solid var(---gray);
     border-radius: 10px;
@@ -174,7 +173,7 @@ footer ul li a:hover {
 }
 
 .card-container {
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
     padding: 20px 40px;
     display: flex;
     flex-wrap: wrap;
@@ -240,6 +239,13 @@ footer ul li a:hover {
     header nav ul li a,
     footer ul li a {
         font-size: 20px;
+        padding: 5px 15px;
+    }
+
+    header nav ul li a:hover,
+    footer ul li a:hover {
+        padding: 5px 15px;
+        box-shadow: none;
     }
 
     footer h3 {
@@ -248,11 +254,13 @@ footer ul li a:hover {
 
     footer ul {
         margin: 0;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     footer ul li {
-        justify-content: space-evenly;
-        padding: 10px 0;
+        justify-content: space-around;
+        padding: 5px 0;
         font-size: 20px;
     }
 
@@ -260,14 +268,49 @@ footer ul li a:hover {
         height: 500px;
     }
 
+    .about, .portfolio {
+        display: block;
+        text-align: center;
+    }
+
     .secondary-header {
+        margin: 0 auto;
         padding: 30px;
-        max-width: 50px;
+        max-width: 80%;
         font-size: 35px;
+        border-bottom: 3px solid var(---gray);
+        border-right: none;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .cards a h3 {
+        left: 5%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    header, .about-me-container, .avatar{
+        margin-bottom: 0;
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 
+    .avatar img {
+        text-align: center;
+    }
 
+    .hero {
+        height: 400px;
+    }
+
+    footer {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    }
 }
