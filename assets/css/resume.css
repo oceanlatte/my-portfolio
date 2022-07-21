@@ -1,5 +1,5 @@
 :root {
-  ---blue: #5C8C75;
+  ---blue: #5c8c75;
   ---green: #799207;
   ---gray: #595959;
   ---white: #fff;
@@ -18,29 +18,80 @@ body {
   color: var(---white);
   margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+/* hero styling */
+.hero {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: top;
+}
 
-button {
+.hero-quote p {
+  color: var(---gray);
+  font-size: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+}
+
+/* button styling  */
+#header-btn,
+#tldr,
+#full-res-btn {
   padding: 5px 10px;
   margin-right: 10px;
   color: var(---white);
   border: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: transparent;
+}
+
+#tldr,
+#full-res-btn {
+  margin-top: 15px;
+}
+
+#header-btn {
   font-size: 25px;
 }
 
-button:hover {
+#header-btn:hover,
+#tldr:hover,
+#full-res-btn:hover {
   color: var(---gray);
   border: 1px solid var(---gray);
   border-radius: 10px;
   background-image: url(../images/daisy-hover-img.jpg);
-  box-shadow: 10px 10px 9px 0 rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 9px 0 rgba(0, 0, 0, 0.75);
 }
 
-.contact-me {
+#tldr,
+#full-res-btn {
+  font-size: 20px;
+  padding: 5px 10px;
+  height: fit-content;
+  display: flex;
+  align-self: center;
+}
+
+/* resume header styling  */
+.resume-btns {
+  display: flex;
+  justify-content: center;
+}
+
+#res-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* footer styling */
+#contact-me {
   position: absolute;
   bottom: 0;
 }

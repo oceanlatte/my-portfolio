@@ -1,367 +1,370 @@
 :root {
-    ---blue: #5C8C75;
-    ---green: #799207;
-    ---gray: #595959;
-    ---white: #fff;
+  ---blue: #5c8c75;
+  ---green: #799207;
+  ---gray: #595959;
+  ---white: #fff;
 }
 
 a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    background-color: var(---blue);
-    color: var(---white);
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100%;
+  background-color: var(---blue);
+  color: var(---white);
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Header Styling Start */
 header {
-    width: 100%;
-    background-color: var(---green);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  background-color: var(---green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 header h1 {
-    margin: 30px;
-    font-weight: normal;
-    font-size: 50px;
-    font-family: 'Sacramento', cursive;
+  margin: 30px;
+  font-weight: normal;
+  font-size: 50px;
+  font-family: "Sacramento", cursive;
 }
 
 header h1 a {
-    padding: 5px;
-    color: var(---white);
+  padding: 5px;
+  color: var(---white);
 }
 
 header h1 a:hover {
-    color: var(---gray);
-    border: 1px solid var(---gray);
-    border-radius: 10px;
-    background-image: url(../images/daisy-hover-img.jpg);
-    box-shadow: 10px 10px 9px 0 rgba(0,0,0,0.75);
+  color: var(---gray);
+  border: 1px solid var(---gray);
+  border-radius: 10px;
+  background-image: url(../images/daisy-hover-img.jpg);
+  box-shadow: 10px 10px 9px 0 rgba(0, 0, 0, 0.75);
 }
 
 header nav ul,
 footer ul {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
 }
 
 header nav ul li a,
 footer ul li a {
-    padding: 10px 20px;
-    font-size: 25px;
-    color: var(---white);
+  padding: 10px 20px;
+  font-size: 25px;
+  color: var(---white);
 }
 
 header nav ul li a:hover,
 footer ul li a:hover {
-    color: var(---gray);
-    border: 1px solid var(---gray);
-    border-radius: 10px;
-    background-image: url(../images/daisy-hover-img.jpg);
-    box-shadow: 10px 10px 9px 0 rgba(0,0,0,0.75);
+  color: var(---gray);
+  border: 1px solid var(---gray);
+  border-radius: 10px;
+  background-image: url(../images/daisy-hover-img.jpg);
+  box-shadow: 10px 10px 9px 0 rgba(0, 0, 0, 0.75);
 }
 
 footer ul li a:hover {
-    box-shadow: 5px 5px 7px 0 rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.75);
 }
 
 /* Start Footer Styling */
-    footer {
-        background-color: var(---gray);
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-    }
+footer {
+  background-color: var(---gray);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
 
-    footer h3 {
-        padding: 0 20px;
-        font-size: 40px;
-        display: inline;
-    }
+footer h3 {
+  padding: 0 20px;
+  font-size: 40px;
+  display: inline;
+}
 
-    footer ul li {
-        padding: 0 15px;
-        font-size: 25px;
-    }    
-
+footer ul li {
+  padding: 0 15px;
+  font-size: 25px;
+}
 
 /* Hero Styling Start */
 .hero {
-    height: 650px;
-    width: 100%;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: top;
+  height: 650px;
+  width: 100%;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
 .hero-quote {
-    height: inherit;
-    width: 100%;
-    display: flex;
+  height: inherit;
+  width: 100%;
+  display: flex;
 }
 
 .hero-quote p {
-    padding: 0 30px;
-    color: var(---gray);
-    font-size: 50px;
-    font-family: 'Sacramento', cursive;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end ;
-    flex: 1;
+  padding: 0 30px;
+  color: var(---gray);
+  font-size: 50px;
+  font-family: "Sacramento", cursive;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
 }
 
 /* About Me Styling */
 .about {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-me-container {
-    padding: 0 50px;
-    display: flex;
+  padding: 0 50px;
+  display: flex;
 }
 
 .avatar {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .avatar img {
-    padding: 20px;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
 }
 
 .about p {
-    margin: 20px;
-    line-height: 1.5;
-    font-size: 20px;
-    border-radius: 15px;
-    align-self: center;
-    flex-wrap: wrap;
+  margin: 20px;
+  line-height: 1.5;
+  font-size: 20px;
+  border-radius: 15px;
+  align-self: center;
+  flex-wrap: wrap;
 }
 
 .about-span {
-    font-family: 'Sacramento', cursive;
-    font-size: 30px;
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
 }
 /* End About Me Section Styling */
 
 .secondary-header {
-    padding: 60px;
-    min-width: 100px;
-    font-size: 40px;
-    font-weight: normal;
-    color: var(---white);
-    border-right: 3px solid var(---gray);
+  padding: 60px;
+  min-width: 100px;
+  font-size: 40px;
+  font-weight: normal;
+  color: var(---white);
+  border-right: 3px solid var(---gray);
 }
 
 /* Portfolio Section Style Start */
 .portfolio {
-    background-color: var(---green);
-    display: flex;
-    justify-content: space-between;
+  background-color: var(---green);
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-container {
-    margin: 10px auto 0 auto;
-    padding: 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex: 1;
+  margin: 10px auto 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1;
 }
 
 .cards:first-child {
-    flex: 3 1 100%;
+  flex: 3 1 100%;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 40%;
 }
 
 .cards a {
-    color: var(---gray);
+  color: var(---gray);
 }
 
 .cards h3 {
-    position: relative;
-    left: 2%;
-    bottom: 30%;
-    max-width: fit-content;
+  position: relative;
+  left: 2%;
+  bottom: 30%;
+  max-width: fit-content;
 }
 
 .cards h3 {
-    padding: 15px;
-    font-size: 20px;
-    font-weight: normal;
-    background-color: var(---gray);
-    background-image: url(../images/daisy-hover-img.jpg);
-    border-radius: 10px;
-    border: 1px solid var(---gray);
-    z-index: 9999;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: var(---gray);
+  background-image: url(../images/daisy-hover-img.jpg);
+  border-radius: 10px;
+  border: 1px solid var(---gray);
+  z-index: 9999;
 }
 
 .cards h3:hover {
-    background-image: none;
-    background-color: var(---blue);
-    color: var(---white);
-    opacity: 0.8;
+  background-image: none;
+  background-color: var(---blue);
+  color: var(---white);
+  opacity: 0.8;
 }
 
-.cards img{
-    padding: 10px;
-    max-width: 90%;
-    border-radius: 10px;
-    border: 5px solid var(---gray);
-    flex-wrap: wrap;
+.cards img {
+  padding: 10px;
+  max-width: 90%;
+  border-radius: 10px;
+  border: 5px solid var(---gray);
+  flex-wrap: wrap;
 }
 
 .cards img:first-child {
-    width: 100%;
+  width: 100%;
 }
 
 .cards img:hover {
-    color: var(---gray);
-    opacity: 0.8;
+  color: var(---gray);
+  opacity: 0.8;
 }
 
 /* Start Media Queries for Smaller Screens */
 @media screen and (max-width: 980px) {
-    header h1 {
-        font-size: 40px;
-        margin: 20px;
-    }
+  header h1 {
+    font-size: 40px;
+    margin: 20px;
+  }
 
-    header nav ul li a,
-    footer ul li a {
-        font-size: 20px;
-        padding: 5px 15px;
-    }
+  header nav ul li a,
+  footer ul li a {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
 
-    header nav ul li a:hover,
-    footer ul li a:hover {
-        padding: 5px 15px;
-        box-shadow: none;
-    }
+  header nav ul li a:hover,
+  footer ul li a:hover {
+    padding: 5px 15px;
+    box-shadow: none;
+  }
 
-    footer h3 {
-        font-size: 30px;
-    }
+  footer h3 {
+    font-size: 30px;
+  }
 
-    footer ul {
-        margin: 0;
-        justify-content: flex-start;
-        align-items: center;
-    }
+  footer ul {
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-    footer ul li {
-        justify-content: space-around;
-        padding: 5px 0;
-        font-size: 20px;
-    }
+  footer ul li {
+    justify-content: space-around;
+    padding: 5px 0;
+    font-size: 20px;
+  }
 
-    .hero {
-        height: 500px;
-    }
+  .hero {
+    height: 500px;
+  }
 
-    .about, .portfolio {
-        display: block;
-        text-align: center;
-    }
+  .about,
+  .portfolio {
+    display: block;
+    text-align: center;
+  }
 
-    .avatar img {
-        padding: 10px;
-    }
+  .avatar img {
+    padding: 10px;
+  }
 
-    .about-me-container {
-        padding: 0 30px;
-        display: flex;
-    }
+  .about-me-container {
+    padding: 0 30px;
+    display: flex;
+  }
 
-    .about p {
-        margin: 15px;
-    }
+  .about p {
+    margin: 15px;
+  }
 
-    .secondary-header {
-        margin: 0 auto;
-        padding: 30px;
-        max-width: 80%;
-        font-size: 35px;
-        border-bottom: 3px solid var(---gray);
-        border-right: none;
-    }
+  .secondary-header {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 80%;
+    font-size: 35px;
+    border-bottom: 3px solid var(---gray);
+    border-right: none;
+  }
 
-    .card-container {
-        justify-content: center;
-    }
+  .card-container {
+    justify-content: center;
+  }
 
-    .cards a h3 {
-        left: 5%;
-        font-size: 15px;
-        padding: 10px;
-    }
+  .cards a h3 {
+    left: 5%;
+    font-size: 15px;
+    padding: 10px;
+  }
 
-    .cards {
-        flex: 1 0 60%;
-    }
+  .cards {
+    flex: 1 0 60%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    header, .about-me-container, .avatar{
-        margin-bottom: 0;
-        display: block;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+  header,
+  .about-me-container,
+  .avatar {
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-    .avatar img {
-        text-align: center;
-    }
+  .avatar img {
+    text-align: center;
+  }
 
-    .hero {
-        height: 400px;
-    }
+  .hero {
+    height: 400px;
+  }
 
-    .about-me-container {
-        padding: 0 10px;
-    }
+  .about-me-container {
+    padding: 0 10px;
+  }
 
-    .about p {
-        font-size: 18px;
-        margin: 15px;
-    }
+  .about p {
+    font-size: 18px;
+    margin: 15px;
+  }
 
-    footer {
+  footer {
     display: block;
     text-align: center;
     padding-top: 10px;
     height: auto;
-    }
+  }
 
-    .cards {
-        flex: 1 0 100%;
-    }
+  .cards {
+    flex: 1 0 100%;
+  }
 }
