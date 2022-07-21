@@ -1,0 +1,46 @@
+:root {
+  ---blue: #5C8C75;
+  ---green: #799207;
+  ---gray: #595959;
+  ---white: #fff;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(---blue);
+  color: var(---white);
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: var(---white);
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+button:hover {
+  color: var(---gray);
+  border: 1px solid var(---gray);
+  border-radius: 10px;
+  background-image: url(../images/daisy-hover-img.jpg);
+  box-shadow: 10px 10px 9px 0 rgba(0,0,0,0.75);
+}
+
+.contact-me {
+  position: absolute;
+  bottom: 0;
+}
