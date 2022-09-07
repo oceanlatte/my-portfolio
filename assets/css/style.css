@@ -118,6 +118,7 @@ footer ul li {
     height: inherit;
     width: 100%;
     display: flex;
+    text-shadow: 5px 2px 3px rgba(0,0,0,0.6);
 }
 
 .hero-quote p {
@@ -250,8 +251,8 @@ footer ul li {
     opacity: 0.8;
 }
 
-/* Start Media Queries for Smaller Screens */
-@media screen and (max-width: 980px) {
+/* ------ Start Media Queries for Smaller Screens -------- */
+@media screen and (max-width: 1000px) {
     header h1 {
         font-size: 40px;
         margin: 20px;
@@ -260,12 +261,12 @@ footer ul li {
     header nav ul li a,
     footer ul li a {
         font-size: 20px;
-        padding: 5px 15px;
+        padding: 5px 10px;
     }
 
     header nav ul li a:hover,
     footer ul li a:hover {
-        padding: 5px 15px;
+        padding: 2px 15px;
         box-shadow: none;
     }
 
@@ -305,13 +306,14 @@ footer ul li {
 
     .about p {
         margin: 15px;
+        font-size: 16px;
     }
 
     .secondary-header {
         margin: 0 auto;
         padding: 30px;
         max-width: 80%;
-        font-size: 35px;
+        font-size: 30px;
         border-bottom: 3px solid var(---gray);
         border-right: none;
     }
@@ -331,6 +333,7 @@ footer ul li {
     }
 }
 
+/* ------- Media Screens smaller than 780 px --------- */
 @media screen and (max-width: 768px) {
     header, .about-me-container, .avatar{
         margin-bottom: 0;
