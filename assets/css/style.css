@@ -29,12 +29,13 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    
 }
 
 header h1 {
-    margin: 30px;
+    margin: 25px 10px 15px 10px;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Sacramento', cursive;
 }
 
@@ -81,25 +82,27 @@ footer ul li a:hover {
 }
 
 /* Start Footer Styling */
-    footer {
-        background-color: var(---gray);
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-    }
+footer {
+    background-color: var(---gray);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 0px;
+}
 
-    footer h3 {
-        padding: 0 20px;
-        font-size: 40px;
-        display: inline;
-    }
+footer h3 {
+    padding: 0 20px;
+    font-size: 30px;
+    display: inline;
+    margin: 0;
+}
 
-    footer ul li {
-        padding: 0 15px;
-        font-size: 25px;
-    }    
+footer ul li {
+    padding: 0 15px;
+    font-size: 25px;
+}    
 
 
 /* Hero Styling Start */
